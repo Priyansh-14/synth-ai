@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update role=tabpanel related aria-labelledby for accessibility
     featureContentDiv.setAttribute('aria-labelledby', `${feature}-tab`);
-    featureContentDiv.focus();
+    featureContentDiv.focus({ preventScroll: true });
   }
 
   tabBtns.forEach(btn =>
